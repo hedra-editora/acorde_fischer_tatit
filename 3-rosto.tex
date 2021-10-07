@@ -1,0 +1,81 @@
+% Tamanhos
+% \tiny
+% \scriptsize
+% \footnotesize
+% \small 
+% \normalsize
+% \large 
+% \Large 
+% \LARGE 
+% \huge
+% \Huge
+
+% Posicionamento
+% \centering 
+% \raggedright
+% \raggedleft
+% \vfill 
+% \hfill 
+% \vspace{Xcm}   % Colocar * caso esteja no começo de uma página. Ex: \vspace*{...}
+% \hspace{Xcm}
+
+% Estilo de página
+% \thispagestyle{<<nosso>>}
+% \thispagestyle{empty}
+% \thispagestyle{plain}  (só número, sem cabeço)
+% https://www.overleaf.com/learn/latex/Headers_and_footers
+
+% Compilador que permite usar fonte de sistema: xelatex, lualatex
+% Compilador que não permite usar fonte de sistema: latex, pdflatex
+
+% Definindo fontes
+% \setmainfont{Times New Roman}  % Todo o texto
+% \newfontfamily\avenir{Avenir}  % Contexto
+
+\begingroup\thispagestyle{empty}\vspace*{-.01\textheight}\parindent=0pt 
+              \formular
+              \Huge 
+              \textbf{A estranha força\\ da canção}\baselineskip=.67\baselineskip 
+
+              \smaller[3]\textit{}
+              \vspace{15mm}
+              
+              \LARGE
+              Mário de Andrade
+              
+              \vspace{5cm}
+
+              \newfontfamily\minion{Minion Pro}
+              {\selectfont\minion\small Marcos Lacerda (\textit{organização})}
+              
+              {\selectfont\minion\footnotesize
+              1ª edição}
+                    
+              \vfill
+
+              \newfontfamily\timesnewroman{Times New Roman}
+              {\fontsize{30}{40}\selectfont \timesnewroman hedra}
+              
+              \medskip
+
+              {\selectfont\minion\small
+              São Paulo \quad\the\year}
+\endgroup
+\pagebreak
+
+\begingroup 
+
+\footnotesize\parindent0pt\parskip5pt\thispagestyle{empty} 
+\vspace*{.1\textheight}\mbox{} \vfill
+\baselineskip=.92\baselineskip
+\thispagestyle{empty}
+
+\textbf{A estranha força da canção} \lipsum[1]
+
+\textbf{Mário de Andrade} \lipsum[2]
+
+\textbf{Marcos Lacerda} \lipsum[3]
+
+
+\endgroup
+\pagebreak
